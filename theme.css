@@ -1,0 +1,128 @@
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --bg-color: #f9f6ff;
+  --text-color: #2d2b3f;
+  --card-bg: #ffffff;
+  --card-text: #2d2b3f;
+  --heading-color: #241c3c;
+  --accent-color: #9b5de5;       /* bright violet accent */
+  --button-color: #9b5de5;       /* purple buttons */
+  --button-text: #ffffff;
+  --link-color: #7c3aed;         /* lavender-purple links */
+}
+
+.dark-mode {
+  --bg-color: #1b152b;
+  --text-color: #e6dcff;
+  --card-bg: #2a2140;
+  --card-text: #e6dcff;
+  --heading-color: #ffffff;
+  --accent-color: #c77dff;       /* lighter purple accent */
+  --button-color: #c77dff;
+  --button-text: #1b152b;
+  --link-color: #b794f4;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.card, .location-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button,
+.btn {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* === Resume Page Styling === */
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.resume-header p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.resume-links a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.resume-links a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  font-weight: 600;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.resume-item {
+  margin-bottom: 1rem;
+}
+
+.resume-item strong {
+  color: var(--heading-color);
+}
+
+.resume-date {
+  float: right;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: var(--button-text);
+}

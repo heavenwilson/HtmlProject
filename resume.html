@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume — Olivia Wilson-Simmonds</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="theme.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="theme.css" rel="stylesheet" />
+  <style>
+    .resume-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .resume-header h1 {
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+    .resume-links a {
+      color: var(--link-color);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .section-title {
+      font-weight: 600;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+    }
+    .resume-item {
+      margin-bottom: 1rem;
+    }
+    .resume-date {
+      float: right;
+      font-style: italic;
+      color: var(--text-color);
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
@@ -25,36 +62,122 @@
     </div>
   </nav>
 
-  <main class="container">
-    <header class="mb-4 text-center">
-      <h1 class="h2 mb-1">Olivia Wilson-Simmonds</h1>
-      <p class="mb-0"><a href="mailto:oliviazwilson210@gmail.com">oliviazwilson210@gmail.com</a> • New York, NY</p>
-      <p class="mb-0"><a href="https://github.com/yourhandle">github.com/yourhandle</a> • <a href="https://www.linkedin.com/in/yourhandle">LinkedIn</a></p>
-    </header>
+  <main class="container pb-5">
+    <!-- Header -->
+    <div class="resume-header">
+      <h1>Olivia Wilson-Simmonds</h1>
+      <p class="text-muted">Computer Science Student • Aspiring Software Engineer</p>
+      <div class="resume-links">
+        <a href="https://github.com/heavenwilson" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/olivia-wilson-simmonds-5a785b369" target="_blank">LinkedIn</a>
+      </div>
+    </div>
 
-    <section class="mb-4">
-      <h2 class="h5">Education</h2>
-      <p class="mb-1"><strong>[Your University]</strong> — B.S. Computer Science (2024–2026)</p>
-      <p class="mb-0 text-muted">Relevant coursework: Web Programming I, REST & Express, PostgreSQL & Sequelize, Data Structures</p>
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="resume-item">
+        <strong>Borough of Manhattan Community College (BMCC)</strong>
+        <span class="resume-date">Expected Dec 2025</span><br>
+        Associate in Science — Computer Science Major<br>
+        <em>Relevant Coursework:</em> Data Structures, Algorithms, Web Programming, Databases
+      </div>
     </section>
 
-    <section class="mb-4">
-      <h2 class="h5">Projects</h2>
-      <ul class="mb-0">
-        <li><strong>Rescue NYC</strong> — responsive site with light/dark mode and borough filters.</li>
-        <li><strong>Full-stack CRUD App</strong> — React + Express + PostgreSQL, real-time form validation.</li>
-        <li><strong>EchoCache</strong> — time-shifted messaging app; designed onboarding & map preview.</li>
-      </ul>
+    <!-- Work Experience -->
+    <section>
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="resume-item">
+        <strong>Security Officer — Madison Security Group</strong>
+        <span class="resume-date">Oct 2021 – Present</span>
+        <ul>
+          <li>Developed strong attention to detail, situational awareness, and problem-solving skills useful for debugging and security auditing.</li>
+          <li>Created digital reports and incident documentation using structured data tracking methods.</li>
+          <li>Collaborated with a diverse team, improving communication and time management skills aligned with agile teamwork.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <strong>Photographer — SYEP Summer Bridge Program</strong>
+        <span class="resume-date">Jul 2020 – Aug 2020</span>
+        <ul>
+          <li>Collaborated with a team to create photo-based storytelling projects combining creativity and technical execution.</li>
+          <li>Designed digital media plans and analyzed audiences — experience transferable to UI/UX and user research.</li>
+          <li>Used editing software to manage and optimize images, building foundational digital tool proficiency.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <strong>Sales Associate — Custom Prints 101</strong>
+        <span class="resume-date">Mar 2020</span>
+        <ul>
+          <li>Operated printing and design software to create customized client orders with accuracy and attention to detail.</li>
+          <li>Managed workflow and data entry for order tracking and product design consultations.</li>
+          <li>Strengthened creativity and communication under client deadlines.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <strong>Secretarial Assistant — Dyckman Youth Enterprise</strong>
+        <span class="resume-date">Jul 2018 – Aug 2018</span>
+        <ul>
+          <li>Assisted with event coordination, scheduling, and time tracking systems.</li>
+          <li>Performed data entry and timesheet management using administrative software.</li>
+          <li>Strengthened collaboration and customer-facing communication skills.</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="mb-4">
-      <h2 class="h5">Skills</h2>
-      <p class="mb-0">HTML, CSS, JavaScript, React, Bootstrap, Node/Express, PostgreSQL, Git/GitHub</p>
+    <!-- Technical Projects -->
+    <section>
+      <h2 class="section-title">Technical Projects</h2>
+
+      <div class="resume-item">
+        <strong>EchoCache — Fullstack Geolocation-Based Memory Sharing App</strong>
+        <span class="resume-date">Summer 2025</span>
+        <ul>
+          <li>Developed a fullstack app for time-locked and location-locked digital “Echoes” using React, Node.js, and PostgreSQL.</li>
+          <li>Implemented geolocation with Leaflet and the Geolocation API to visualize user posts on a map.</li>
+          <li>Integrated AWS S3 for media uploads and designed database schema with DBdiagram and Figma prototypes.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <strong>Fantasy Haven — E-Commerce Website</strong>
+        <span class="resume-date">Spring 2025</span>
+        <ul>
+          <li>Developed a multi-page Bootstrap + custom CSS site for creative merchandise and gaming accessories.</li>
+          <li>Implemented navigation, image handling, and cart UI in HTML, CSS, and JavaScript.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <strong>Campus CRUD App — Student & Campus Management</strong>
+        <span class="resume-date">Summer 2025</span>
+        <ul>
+          <li>Built a fullstack React + Express + PostgreSQL app with Sequelize ORM for student and campus data.</li>
+          <li>Implemented form validation, dynamic routing, and real-time UI updates; deployed via Vercel and GitHub Pages.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <p>
+        <strong>Programming Languages:</strong> JavaScript, Python, SQL, HTML, CSS<br>
+        <strong>Frameworks & Libraries:</strong> React, Node.js, Express, Bootstrap, TailwindCSS<br>
+        <strong>Tools & Technologies:</strong> PostgreSQL, Sequelize, AWS S3, Vercel, Figma, DBdiagram, REST APIs, Bash, Git, GitHub, Postman, NPM, Chrome DevTools<br>
+        <strong>Techniques & Protocols:</strong> Agile, Universal/Inclusive Design, HTTP, OAuth 2.0, OpenAPI<br>
+        <strong>Technical Concepts:</strong> REST APIs, CRUD, Fullstack Development, Geolocation APIs, Cloud Storage<br>
+        <strong>Languages:</strong> English (Fluent)
+      </p>
     </section>
   </main>
 
-  <footer class="bg-dark text-light text-center py-3 mt-4">
-    <small>&copy; 2025 Olivia Wilson-Simmonds</small>
+  <footer class="bg-dark text-light text-center py-3">
+    <small>&copy; 2025 Olivia Wilson-Simmonds • BMCC Computer Science Program</small>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
